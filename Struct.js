@@ -126,13 +126,15 @@ class Peca {
 	}
 
 	resetCores(){
-		for(var i=0; i<this.jogadasPossiveis.length; i++){
-			var peca = document.getElementById(this.jogadasPossiveis[i]);
-			peca.removeAttribute("onclick");
-			if((this.jogadasPossiveis[i][0] + this.jogadasPossiveis[i][1]) % 2 ==0){
-				peca.style.backgroundColor = "wheat";
-			}else{
-				peca.style.backgroundColor = "cadetblue";
+		if(this.jogadasPossiveis.length > 0){
+			for(var i=0; i<this.jogadasPossiveis.length; i++){
+				var peca = document.getElementById(this.jogadasPossiveis[i]);
+				peca.removeAttribute("onclick");
+				if((this.jogadasPossiveis[i][0] + this.jogadasPossiveis[i][1]) % 2 ==0){
+					peca.style.backgroundColor = "wheat";
+				}else{
+					peca.style.backgroundColor = "cadetblue";
+				}
 			}
 		}
 	}
