@@ -1,0 +1,41 @@
+img {
+	margin: 0;
+	padding: 0;
+	width: 60px;
+	height: 60px;
+	vertical-align: middle;
+}
+
+
+
+#tabuleiro {
+	background-color: gainsboro;
+	width: 593px;
+	height: 593px;
+	border: #000 solid 1px;
+	margin: auto;
+}
+
+#tabuleiro div {
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin: 2px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#tabuleiro div:hover{
+	margin: 0;
+	border: green solid 2px;
+	opacity: 20%;
+}
+
+pos {
+	margin-right: auto;
+	position: absolute;
+}
+
+.vazio {
+
+}
